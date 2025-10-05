@@ -39,16 +39,13 @@ A modern .NET 8 Minimal API for currency conversion, featuring distributed cachi
 - Currency exclusion rules (TRY, PLN, THB, MXN) are hardcoded in the domain layer for demonstration.
 - Transaction fee is a flat 1% for all conversions.
 - Distributed caching uses in-memory cache for simplicity.
-- Minimal API endpoints are grouped for clarity and future extensibility.
-- Integration tests require a public `Program` class for bootstrapping.
+- Minimal API endpoints are grouped for clarity and future extensibility with AOT compiler.
 
 ## Possible Future Enhancements
 - Support for external distributed cache providers (e.g., Redis).
 - Dynamic currency exclusion rules from configuration or database.
 - More granular tracing and metrics (e.g., Prometheus, Jaeger exporters).
-- Role-based authorization and JWT validation improvements.
-- API versioning and documentation enhancements.
-- More advanced business rules and fee structures.
+- More advanced business rules and structures.
 
 ## Highlights
 - **Minimal APIs:** Modern, fast, and compatible with AOT compilation.
