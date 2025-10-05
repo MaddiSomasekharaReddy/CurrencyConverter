@@ -41,15 +41,6 @@ bld/
 # Visual Studio 2017 auto generated files
 Generated\ Files/
 
-# MSTest test Results
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
-
-# NUnit
-*.VisualState.xml
-TestResult.xml
-nunit-*.xml
-
 # Build Results of an ATL Project
 [Dd]ebugPS/
 [Rr]eleasePS/
@@ -361,3 +352,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Do NOT ignore test results coverage
+!CurrencyConverter.Test/TestResults/
+!CurrencyConverter.Test/TestResults/**/*.coverage

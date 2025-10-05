@@ -8,8 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="Moq" Version="4.20.72" />
     <PackageReference Include="MSTest" Version="3.6.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CurrencyConverter.API\CurrencyConverter.Api.csproj" />
+    <ProjectReference Include="..\CurrencyConverter.Domain\CurrencyConverter.Domain.csproj" />
+    <ProjectReference Include="..\CurrencyConverter.Infrastructure\CurrencyConverter.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

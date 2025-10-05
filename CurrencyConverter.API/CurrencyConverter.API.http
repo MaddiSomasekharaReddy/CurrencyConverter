@@ -1,6 +1,26 @@
 @CurrencyConverter.API_HostAddress = http://localhost:5259
 
-GET {{CurrencyConverter.API_HostAddress}}/weatherforecast/
+# Get latest currency rates
+GET {{CurrencyConverter.API_HostAddress}}/currency/rates/latest?baseCurrency=EUR
+Accept: application/json
+
+###
+
+# Convert currency
+POST {{CurrencyConverter.API_HostAddress}}/currency/convert
+Content-Type: application/json
+Accept: application/json
+
+{
+  "from": "EUR",
+  "to": "USD",
+  "amount": 100
+}
+
+###
+
+# Get historical currency rates
+GET {{CurrencyConverter.API_HostAddress}}/currency/rates/historical?baseCurrency=EUR&startDate=2024-01-01&endDate=2024-01-31&page=1&pageSize=10
 Accept: application/json
 
 ###
